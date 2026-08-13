@@ -44,12 +44,27 @@
           
         
         <article class="project">
-          <div class="video"><iframe src="https://www.youtube.com/embed/45r3Cvojp30?si=yeZhS6sqXV-E3mwi" title="Casamiento 02" loading="lazy" allowfullscreen></iframe></div>
+          <div class="video drive-video">
+  <button class="video-cover" type="button" aria-label="Reproducir Paulina y Caio">
+    <img
+      src="assets/PaulinaCaio.webp"
+      alt="Paulina y Caio"
+    >
+    <span class="play-icon">▶</span>
+  </button>
+
+  <iframe
+    data-src="https://drive.google.com/file/d/1D1V82fbYzGzxyE_xyRmMYUVulou2yYUL/preview"
+    title="Paulina & Caio"
+    allow="autoplay; fullscreen"
+    allowfullscreen>
+  </iframe>
+</div>
           <div class="project-meta"><div><h4>Paulina & Caio - Video Largo</h4><p>Registro: Juan Demicheli y Rómulo Serrón<br>Edición: Juan Demicheli</p></div><span>2025</span></div>
         </article>
       
         <article class="project">
-          <div class="video"><iframe src="https://www.youtube.com/embed/QGWxIK3es9g?si=cfoMxCwh7-HbYvQK" title="Casamiento 02" loading="lazy" allowfullscreen></iframe></div>
+          <div class="video"><iframe src="https://drive.google.com/file/d/1ziLlc-YoFQ7ekoRkSM_mrg491sDBun3O/preview" title="Leo & Toca" loading="lazy" allow="autoplay; fullscreen" allowfullscreen> </iframe></div>
           <div class="project-meta"><div><h4>Leo & Toca - Video Corto</h4><p>Registro: Juan Demicheli y Rómulo Serrón<br>Edición: Juan Demicheli</p></div><span>2026</span></div>
         </article>
 
@@ -215,6 +230,18 @@
             .replace("↓", "↑")
         : textoOriginal;
     });
+  });
+
+    document.addEventListener("click", function (event) {
+    const portada = event.target.closest(".video-cover");
+
+    if (!portada) return;
+
+    const contenedor = portada.closest(".drive-video");
+    const iframe = contenedor.querySelector("iframe");
+
+    iframe.src = iframe.dataset.src;
+    portada.remove();
   });
 
 </script>

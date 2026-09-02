@@ -10,6 +10,7 @@
   <meta property="og:image" content="https://juandemi.com/assets/juan.webp">
   <meta property="og:url" content="https://juandemi.com">
   <meta property="og:type" content="website">
+  <link rel="canonical" href="https://juandemi.com/">
   <link rel="icon" type="image/png" href="assets/favicon.png?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +36,7 @@
 </head>
 <body>
 <header class="site-header">
-  <a class="logo" href="#">Juandemi</a>
+  <a class="logo" href="/">Juandemi</a>
   <nav class="main-nav">
     <a href="#trabajos">Trabajos</a>
     <a href="#quien-soy">Quién soy</a>
@@ -108,78 +109,9 @@
           <div class="project-meta"><div><h4>Leo & Toca - Video Corto</h4><p>Un casamiento de cuatro días resumido en unos pocos minutos.<br>Registro: Juan Demicheli y Enzo Avila<br>Edición: Juan Demicheli</p></div><span></span></div>
         </article>
 
-        <article class="project">
-          <div class="video video-extra">
-  <video
-    controls
-    playsinline
-    preload="metadata"
-    poster="assets/CamilaFelipe.webp"
-  >
-    <source
-      src="https://videos.juandemi.com/CamilaFelipe.mp4"
-      type="video/mp4"
-    >
-    Tu navegador no puede reproducir este video.
-  </video>
-
-
-</div>
-          <div class="project-meta video-extra"><div><h4>Camila & Felipe - Video Corto</h4><p>Una ceremonia en el bosque que parece de película.<br>Registro: Juan Demicheli y Rómulo Serrón<br>Edición: Juan Demicheli</p></div><span></span></div>
-        </article>
-
-        <article class="project">
-          <div class="video video-extra"><video
-    controls
-    playsinline
-    preload="metadata"
-    poster="assets/GabiCaco.webp"
-  >
-    <source
-      src="https://videos.juandemi.com/Gabi_Caco_Fixed_WEB.mp4"
-      type="video/mp4"
-    >
-    Tu navegador no puede reproducir este video.
-  </video></div>
-          <div class="project-meta video-extra"><div><h4>Gabi & Caco - Teaser</h4><p>Una boda en la estancia Vik, José Ignacio, Uruguay.<br>Registro: Juan Demicheli y Gabriel Mendez<br>Edición: Juan Demicheli</p></div><span></span></div>
-        </article>
-
-        <article class="project">
-          <div class="video video-extra"><video
-    controls
-    playsinline
-    preload="metadata"
-    poster="assets/LuanaMau.webp"
-  >
-    <source
-      src="https://videos.juandemi.com/LuannaMaurelio.mp4"
-      type="video/mp4"
-    >
-    Tu navegador no puede reproducir este video.
-  </video></div>
-          <div class="project-meta video-extra"><div><h4>Luanna & Maurelio - Video Largo</h4><p>Un casamiento en la estancia Luz Culinary Wine Lodge.<br>Registro: Juan Demicheli y Rómulo Serrón<br>Edición: Juan Demicheli</p></div><span></span></div>
-        </article>
-        <article class="project">
-          <div class="video video-extra"><video
-    controls
-    playsinline
-    preload="metadata"
-    poster="assets/MartinaPreston.webp"
-  >
-    <source
-      src="https://videos.juandemi.com/MartinaPreston.mp4"
-      type="video/mp4"
-    >
-    Tu navegador no puede reproducir este video.
-  </video></div>
-          <div class="project-meta video-extra"><div><h4>Martina & Preston - Video Largo</h4><p>Un casamiento en Estancia Aguaverde, Punta del Este, Uruguay.<br>Registro: Juan Demicheli y Gabriel Mendez<br>Edición: Juan Demicheli</p></div><span></span></div>
-       
-       
-       
-        </article>
-        <button class="ver-mas" type="button">
-  Ver más casamientos ↓
-</button>
+        <a class="ver-mas" href="casamientos/">
+          Ver todos los casamientos <span class="flecha-abajo" aria-hidden="true">&#x2193;&#xFE0E;</span>
+        </a>
 
       </div>
 
@@ -310,7 +242,7 @@
 
 <script>
   
-  const botonesVerMas = document.querySelectorAll(".ver-mas");
+  const botonesVerMas = document.querySelectorAll("button.ver-mas");
 
   botonesVerMas.forEach((boton) => {
     const grilla = boton.closest(".projects-grid");

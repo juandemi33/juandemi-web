@@ -150,3 +150,34 @@ body {
   background: #111;
 }
 
+/* Página de casamientos */
+.wedding-intro{max-width:var(--max);margin:0 auto;padding:112px 42px 145px}
+.page-eyebrow{margin:0 0 36px;font-size:13px;letter-spacing:.08em;color:var(--muted)}
+.wedding-intro h1{max-width:1180px;margin-bottom:82px;font-size:clamp(58px,8vw,124px);line-height:.9}
+.wedding-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:74px;padding-top:24px;border-top:1px solid var(--line)}
+.wedding-lead{max-width:620px;margin:0;font-size:clamp(28px,3vw,48px);line-height:1.08;letter-spacing:-.045em}
+.wedding-description{max-width:580px;color:#4b4b4b;font-size:18px;line-height:1.55}
+.wedding-description p{margin:0 0 22px}
+.inline-link{display:inline-block;margin-top:16px;color:var(--text);font-size:16px;border-bottom:1px solid var(--text);padding-bottom:3px}
+.inline-link:hover{opacity:.55}
+.wedding-work{max-width:var(--max);margin:0 auto;padding:0 42px 150px}
+.wedding-grid{gap:70px 14px}
+.wedding-grid .project-meta h3{margin:0 0 2px;font-size:18px;font-weight:500;letter-spacing:-.02em}
+.wedding-contact{padding-bottom:145px}
+
+@media(max-width:920px){
+  .wedding-intro{padding:72px 20px 105px}
+  .wedding-intro h1{margin-bottom:58px;font-size:clamp(50px,13vw,82px)}
+  .wedding-intro-grid{grid-template-columns:1fr;gap:34px}
+  .wedding-description{font-size:17px}
+  .wedding-work{padding:0 20px 105px}
+  .wedding-grid{gap:42px}
+  .wedding-contact{padding-bottom:100px}
+}
+
+@media(max-width:560px){
+  .wedding-intro{padding-top:54px}
+  .page-eyebrow{margin-bottom:28px}
+  .wedding-intro h1{font-size:clamp(48px,15vw,72px)}
+  .wedding-lead{font-size:30px}
+}
